@@ -1,3 +1,7 @@
+body {
+  background-color: #dadddd;
+}
+
 /* Selector */
 
 /* Semua tag h2 */
@@ -62,4 +66,69 @@ p {
 
 #hsl {
   background-color: hsl(310, 100%, 50%);
+}
+
+/* ################## */
+/* ### BACKGROUND ### */
+/* ################## */
+div.box-container div {
+  width: 500px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+  border: 0.5px solid black;
+}
+
+/* Tag div yang memiliki class background color */
+div.background-color {
+  background-color: blanchedalmond;
+}
+
+div.background-image {
+  background-color: #7272c4;
+  background-image: url("files/pictures/logo-css-150x150.png");
+  background-repeat: no-repeat;
+  /* background-position: 100px 50px; 100px from left ; 50px from top */
+  background-position: center;
+}
+
+div.background-size {
+  background-image: url("files/pictures/Logo-Css-720x720.png");
+  /* background-size: cover; */
+  background-size: contain;
+  /* background-size: 500px 100px; 500px width, 100px height */
+  /* background-size: 500px; 500px width, height will follow */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* 
+    Jika menggunakan background-size: contain,
+    web browser berusaha menampilkan 1 gambar background utuh,
+    namun tetap mempertahankan rasio gambar.
+    Akibatnya, jika dimensi gambar tidak ‘pas’ dengan element,
+    akan terdapat sisa ruang kosong.
+    Berpatokan ke nilai terkecil antara width dan height element
+    */
+
+  /*
+    Jika menggunakanbackground-size: cover,
+    gambar akan disesuaikan oleh web browser agar 1 gambar dapat menutupi seluruh element.
+    Ini dilakukan dengan memperbesar gambar dan apabila tidak ‘pas’,
+    akan terdapat bagian gambar yang terpotong.
+    Berpatokan ke nilai terbesar antara width dan height
+    */
+}
+
+div.background-attachment {
+  background-image: url("files/pictures/Logo-Css-720x720.png");
+  background-attachment: fixed;
+}
+
+div.background-shorthand {
+  /* 
+    urutan : image, position, size, attachment, color
+  */
+  background: url("files/pictures/logo-css-300x300.png") center fixed red;
 }
