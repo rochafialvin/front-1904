@@ -132,3 +132,13 @@ div.background-shorthand {
   */
   background: url("files/pictures/logo-css-300x300.png") center fixed red;
 }
+
+p#font {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-style: italic; /* normal, oblique */
+  text-transform: uppercase; /* capitalize lowercase none */
+  text-decoration: line-through; /* overline line-through none */
+  text-align: center; /* left, right */
+}
