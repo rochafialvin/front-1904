@@ -1,0 +1,65 @@
+<!-- Memberitahu browser, versi html yang digunakan adalah versi ke-5 -->
+<!DOCTYPE html>
+<!-- Memberitahu browser, bahasa yang ada di halam ini adalah english -->
+<html lang="en">
+  <!-- Berisi informasi tambahan dari suatu halaman -->
+  <head>
+    <!-- Menentukan character set yang digunakan yaitu UTF-8 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Lebar dari halaman akan se lebar dari device yang mengakses -->
+    <!-- Tingkat zoom (default) di level 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title yang akan muncul di tab browser -->
+    <title>FRONT END</title>
+  </head>
+  <!-- Berisi apapun yang ingin ditampilkan di halaman -->
+  <body>
+    <h1>FRONT 101</h1>
+
+    <a href="https://www.google.com/" target="_blank">google</a>
+
+    <!-- ID Link -->
+    <a href="#disini">Arahkan aku</a>
+
+    <h2>Something in your eyes ?</h2>
+    <h2>Something in your eyes ?</h2>
+    <h2>Something in your eyes ?</h2>
+    <h2>Something in your eyes ?</h2>
+    <h2 id="disini">Di arahkan kesini</h2>
+    <h2>Something in your eyes ?</h2>
+    <br />
+    <hr />
+
+    <img
+      src="files/kucing-di-taman.jpg"
+      style="width: 200px"
+      alt="Gambar kucing bersantai"
+      srcset=""
+    />
+
+    <img
+      src="https://bit.ly/3Dbv2fB"
+      style="width: 200px"
+      alt="Gambar kucing duduk di kursi"
+    />
+
+    <picture>
+      <!-- Jika lebar layar dari 650px ke atas -->
+      <source media="(min-width:650px)" srcset="files/pictures/code.png" />
+      <!-- Jika lebar layar dari 465px ke atas (649px)-->
+      <source
+        media="(min-width:465px)"
+        srcset="files/pictures/change-status.png"
+      />
+      <!-- Jika lebar dibawah 465px -->
+      <img
+        src="files/pictures/kucing-di-taman.jpg"
+        alt="Flowers"
+        style="width: auto"
+      />
+    </picture>
+
+    <div style="height: 900px"></div>
+  </body>
+</html>

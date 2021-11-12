@@ -1,0 +1,65 @@
+/* Selector */
+
+/* Semua tag h2 */
+/*
+  color : property
+  #3b56cf : value
+*/
+h2 {
+  color: #3b56cf;
+  border: 1px solid black;
+}
+
+/* Semua tag Paragraph */
+p {
+  color: rgb(68, 0, 255);
+}
+
+/* ########## */
+/* ### ID ### */
+/* ########## */
+
+#red {
+  color: red;
+}
+
+/* ############# */
+/* ### CLASS ### */
+/* ############# */
+
+.peringatan {
+  color: crimson;
+}
+
+/* ################# */
+/* ### ATTRIBUTE ### */
+/* ################# */
+[name] {
+  border: 5px dotted darkcyan;
+}
+
+/* ##################### */
+/* ### OPTION COLORS ### */
+/* ##################### */
+#corn {
+  background-color: cornflowerblue;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: rgb(34, 68, 68);
+}
+
+/* Red Green Blue : 0 - 255 */
+#rgb {
+  background-color: rgb(255, 0, 0);
+  border: 5px solid rgb(137, 39, 161);
+}
+
+/* Hex : 0 - 9 dilanjutkan A - F */
+/* RRGGBB */
+#hex {
+  background-color: #bb55ee;
+}
+
+#hsl {
+  background-color: hsl(310, 100%, 50%);
+}
