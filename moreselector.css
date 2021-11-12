@@ -1,0 +1,53 @@
+body {
+  background-color: blanchedalmond;
+}
+
+/* Group Selector */
+/* Semua tag 'h2', semua tag 'p', dan semua yang memiliki class lorem */
+h2,
+p,
+.lorem {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  color: rebeccapurple;
+}
+
+/* Descendent Selector */
+/* Semua tag 'p' yang ada di dalam tag 'div' */
+div p {
+  text-decoration: underline;
+}
+
+/* Semua tag strong yg ada didalam paragraf, dimana paragraf tsb ada didalam div */
+div p strong {
+  color: rgb(255, 0, 234);
+}
+
+/* Element Specific Selector */
+
+/* ID */
+#hello {
+  font-size: 20px;
+}
+
+/* Class */
+.hello {
+  font-size: 25px;
+}
+
+/* Tag paragraf yang memiliki id = 'hello' */
+p#hello {
+  font-family: "Times New Roman";
+}
+
+/* Tag img yang memiliki class = 'box' */
+img.box {
+  width: 70px;
+}
+
+/* Child Selector */
+/* Semua tag p yang merupakan child dari tag div */
+div > p {
+  text-decoration: line-through;
+  font-weight: bold;
+}

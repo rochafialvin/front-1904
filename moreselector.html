@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Selector</title>
+    <link rel="stylesheet" href="moreselector.css" />
+  </head>
+  <body>
+    <h1>More Selector</h1>
+
+    <!-- Group Selector -->
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <span class="lorem">Lorem ipsum dolor sit amet.</span>
+
+    <!-- Descendent Selector -->
+    <div>
+      <p>Didalam div 1</p>
+      <p>Didalam div 2</p>
+    </div>
+
+    <p>Di luar div</p>
+
+    <!-- div p strong -->
+    <p>
+      <strong>Ini didalam paragraf</strong>
+    </p>
+
+    <div>
+      <p>
+        <strong>Ini didalam paragraf, dan didalam div</strong>
+      </p>
+      <strong>Didalam div, diluar paragraf</strong>
+    </div>
+
+    <!-- Element Specific Selector -->
+    <p id="hello">Helo paragraf World !</p>
+
+    <img
+      src="files/pictures/reactjs-white.png"
+      style="width: 100px"
+      alt="Gambar Kucing"
+      class="box"
+    />
+    <img src="./files/pictures/logo-css-150x150.png" class="box" />
+    <img src="files/pictures/reactjs-white.png" style="width: 100px" />
+
+    <div>
+      <!-- punya 3 child : p, p, span -->
+      <!-- punya 1 grandchild : p -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <span>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </span>
+    </div>
+  </body>
+</html>
