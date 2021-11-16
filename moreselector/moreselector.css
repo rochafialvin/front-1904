@@ -7,6 +7,10 @@ body {
   background-color: blanchedalmond;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Group Selector */
 /* Semua tag 'h2', semua tag 'p', dan semua yang memiliki class lorem */
 h2,
@@ -112,7 +116,15 @@ div > p {
 }
 
 .box-container:hover div {
-  width: 100%;
+  /* width: 100%; */
   /* Jika ditulis disini maka saat kembali ke keadaan semula tidak mengalami transisi */
   /* transition: width 2s ease-in; */
+}
+
+.border-radius {
+  border: 3px solid cadetblue;
+  border-radius: 5px;
+  width: 100px;
+  /* auto : menggunakan seluruh space yang tersedia */
+  margin: 0 auto;
 }
