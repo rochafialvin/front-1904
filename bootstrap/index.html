@@ -6,9 +6,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.min.css" />
 
+    <!-- 
+      Breakpoints
+      Batas lebar dari layar yang menentukan style apa yang akan di terapkan pada lebar layar tertentu.
+    -->
+
+    <!-- 
+      Breakpoints Bootstrap
+
+      small : sm ( min-width: 576px)
+
+      medium : md (min-width: 768px)
+
+      large : lg (min-width: 992px)
+
+      xtra large : xl (min-width : 1200px)
+
+      xtra xtar large : xxl (min-width: 1400px)
+    -->
+
+    <!-- <style>
+      @media (min-width: 576px) {
+        body {
+          background-color: blueviolet;
+        }
+
+        .card {
+          width: 150px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        body {
+          background-color: cadetblue;
+        }
+
+        .card {
+          width: 200px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        body {
+          background-color: darkgreen;
+        }
+
+        .card {
+          width: 200px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        body {
+          background-color: cornflowerblue;
+        }
+
+        .card {
+          width: 200px;
+        }
+      }
+    </style> -->
+
     <title>Bootstrap</title>
   </head>
   <body>
-    <h1>Bootstrap</h1>
+    <div class="container">
+      <h1>Bootstrap</h1>
+
+      <!-- Typography -->
+      <h1>Hello with Bootrap 5</h1>
+      <h2>Hello with Bootrap 5</h2>
+      <h3>Hello with Bootrap 5</h3>
+      <h4>Hello with Bootrap 5</h4>
+      <h5 class="h1">Hello with Bootrap 5</h5>
+      <h6>Hello with Bootrap 5</h6>
+
+      <h1 class="display-1">Welcome to my website</h1>
+      <h1 class="display-2">Display - 2</h1>
+      <h1 class="display-3">Display - 3</h1>
+      <h1 class="display-4">Display - 4</h1>
+
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        cupiditate voluptate, nulla minus, reprehenderit laboriosam omnis
+        asperiores fugit magnam unde tempore quas repudiandae ducimus fuga rerum
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        cupiditate voluptate, nulla minus, reprehenderit laboriosam omnis
+        asperiores fugit magnam unde tempore quas repudiandae ducimus fuga rerum
+        neque error assumenda nemo.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        cupiditate voluptate, nulla minus, reprehenderit laboriosam omnis
+        asperiores fugit magnam unde tempore quas repudiandae ducimus fuga rerum
+        neque error assumenda nemo.
+      </p>
+
+      <p class="font-monospace">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+        corporis.
+      </p>
+
+      <p class="fw-bold">Teks Bold</p>
+      <p>Teks Normal</p>
+      <p class="fst-italic">Teks Italic</p>
+      <br /><br />
+
+      <p class="text-uppercase">make to uppercase</p>
+      <p class="text-lowercase">MAKE TO LOWERCASE</p>
+      <p class="text-capitalize">make to capitalize</p>
+      <br />
+
+      <blockquote class="blockquote text-center">
+        <p>
+          First time always hard, and the rest will be more hard, Don't panic
+        </p>
+      </blockquote>
+
+      <blockquote class="blockquote text-center">
+        <p>
+          First time always hard, and the rest will be more hard, Don't panic
+        </p>
+        <footer class="blockquote-footer">
+          Sasuke 2021 <cite title="Source Title">TIME</cite>
+        </footer>
+      </blockquote>
+      <br />
+
+      <p class="text-truncate">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, itaque
+        commodi quidem aliquid est dolore hic at quibusdam odit consectetur
+        praesentium? Natus vel qui pariatur inventore amet reprehenderit,
+        dolorum nihil.
+      </p>
+      <br />
+
+      <ul class="list-unstyled">
+        <li>Lorem, ipsum</li>
+        <li>Lorem, ipsum</li>
+        <li>Lorem, ipsum</li>
+        <li>Lorem, ipsum</li>
+      </ul>
+
+      <!-- Alignment & Display -->
+
+      <p class="text-start">Rata kiri</p>
+      <p class="text-center">Rata tengah</p>
+      <p class="text-end">Rata kanan</p>
+
+      <p class="text-sm-end">
+        Start aligned text on viewports sized SM (small) or wider.
+      </p>
+      <p class="text-md-end">
+        Start aligned text on viewports sized MD (medium) or wider.
+      </p>
+      <p class="text-lg-end">
+        Start aligned text on viewports sized LG (large) or wider.
+      </p>
+      <p class="text-xl-end">
+        Start aligned text on viewports sized XL (extra-large) or wider.
+      </p>
+
+      <!-- block level element & inlinle level element -->
+      <h1 class="d-inline">Tag heading (block)</h1>
+      <h1 class="d-inline">Tag heading2 (block)</h1>
+      <br />
+      <br />
+
+      <span class="d-block">Tag span (Inline)</span>
+      <span class="d-block">Tag span2 (Inline)</span>
+      <br /><br />
+
+      <!-- Mewarnai -->
+      <!-- primary, secondary, success, danger, warning, dark -->
+      <!-- Text -->
+      <p>Text tanpa color</p>
+      <p class="text-primary">Text tanpa color</p>
+      <p class="text-danger">Text tanpa color</p>
+
+      <!-- Background -->
+      <!-- primary, secondary, success, danger, warning, dark, transparent -->
+      <p class="text-white bg-primary">Background Primary</p>
+      <p class="text-white bg-success">Background Success</p>
+      <p class="invisible">Tidak terlihat</p>
+
+      <!-- Box Model -->
+      <h1>Something</h1>
+      <h1 class="bg-info mt-0">Margin Top 0</h1>
+      <h1 class="bg-info mt-1">Margin Top 1</h1>
+      <h1 class="bg-info mt-2">Margin Top 2</h1>
+      <h1 class="bg-info mt-3">Margin Top 3</h1>
+      <h1 class="bg-info mt-4">Margin Top 4</h1>
+      <h1 class="bg-info mt-5">Margin Top 5</h1>
+      <br /><br /><br />
+
+      <p>
+        <span class="bg-info text-white me-2">Margin end 5</span>
+        <span>Text in the middle</span>
+        <span class="bg-danger text-white ms-5">Margin start 5</span>
+      </p>
+
+      <p>
+        <span class="text-white bg-info">No Margin</span>
+        <span class="mx-5">Text in the middle (mx-5) </span>
+        <span class="text-white bg-danger">No Margin</span>
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        assumenda.
+      </p>
+      <p class="my-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        assumenda.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        assumenda.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="m-5">Margin 4 sisi dengan m-5.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <!-- 
+            PROPERTY
+            margin : m
+            padding : p
+
+            SIDE CODE
+            top     : t
+            right   : e (end)
+            left    : s (start)
+            bottom  : b
+            right and left  : x
+            top and bottom  : y
+        -->
+
+      <div style="height: 600px"></div>
+    </div>
   </body>
 </html>
