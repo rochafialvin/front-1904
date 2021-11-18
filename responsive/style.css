@@ -69,6 +69,14 @@ html {
   }
 }
 
+@media (min-width: 1200px) {
+  .nav-container ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 .nav-container h1 {
   font-weight: 900;
 }
@@ -100,6 +108,31 @@ html {
 
 .hero-container img {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-container img {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-container > * {
+    flex-basis: 49%;
+  }
+
+  .hero-container h1 {
+    font-size: 60px;
+    margin-bottom: 0.5em;
+  }
+
+  .hero-container p {
+    margin-bottom: 1.5em;
+  }
 }
 
 .btn-services {
@@ -136,8 +169,41 @@ html {
   }
 }
 
+@media (min-width: 1200px) {
+  .marketing-expert {
+    flex-direction: row-reverse;
+  }
+
+  .marketing-expert div > * {
+    text-align: left;
+  }
+
+  .marketing-expert div {
+    flex-basis: 50%;
+  }
+
+  .marketing-content {
+    padding-right: 15%;
+  }
+
+  .marketing-content h1 {
+    font-size: 30px;
+  }
+
+  .marketing-content p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
 .marketing-expert img {
   width: 334px;
+}
+
+@media (min-width: 1200px) {
+  .marketing-expert img {
+    width: 100%;
+  }
 }
 
 .marketing-expert h1 {
