@@ -24,15 +24,14 @@ html {
 
 .container {
   width: 90% !important;
-  max-width: 600px;
 }
 
-.bg-primary {
-  background-color: var(--main-color) !important ;
+.bg-custom-primary {
+  background-color: var(--main-color);
 }
 
-.bg-secondary {
-  background-color: var(--secondary-color) !important ;
+.bg-custom-secondary {
+  background-color: var(--secondary-color);
 }
 
 .container ul {
@@ -44,6 +43,29 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    align-items: center;
+  }
+
+  .nav-container a {
+    display: none;
+  }
+
+  .nav-container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: auto;
+    margin-block: 0;
+    width: 75%;
+  }
+
+  .nav-container li {
+    font-size: 14px;
+  }
 }
 
 .nav-container h1 {
@@ -90,7 +112,7 @@ html {
 }
 
 .info-section {
-  padding: 20px 40px;
+  padding-block: 20px;
 }
 
 .info-section p {
@@ -117,6 +139,20 @@ html {
 
 .services {
   padding-block: 50px;
+}
+
+@media (min-width: 768px) {
+  .services {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+  }
+
+  /* Semua child milik element dengan class services */
+  .services > * {
+    flex-basis: 45%;
+    align-self: flex-start;
+  }
 }
 
 .card {
