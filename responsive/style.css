@@ -3,6 +3,7 @@
 :root {
   --main-color: #f7f5f1;
   --secondary-color: #f1efeb;
+  --border-testing: 0.2px solid black;
 }
 
 body {
@@ -123,6 +124,16 @@ html {
   display: flex;
   flex-direction: column;
   padding-block: 50px;
+}
+
+@media (min-width: 768px) {
+  .marketing-expert {
+    align-items: center;
+  }
+
+  .marketing-expert div > * {
+    text-align: center;
+  }
 }
 
 .marketing-expert img {
