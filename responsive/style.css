@@ -13,7 +13,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-family: "M PLUS 1", sans-serif;
 }
 
@@ -106,4 +107,13 @@ html {
 
 .marketing-expert p {
   line-height: 2;
+}
+
+.services {
+  padding-block: 50px;
+}
+
+.card-title {
+  margin-block: 1em;
+  font-weight: 700;
 }
