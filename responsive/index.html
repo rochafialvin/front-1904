@@ -10,6 +10,10 @@
 
       font-family: 'Shippori Antique', sans-serif; (header)
     -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +27,9 @@
     <div class="bg-primary">
       <nav class="container nav-container">
         <h1>MyWebsite</h1>
-        <button class="btn btn-sm btn-outline-secondary btn-nav">nav</button>
+        <a href="#services" class="btn btn-sm btn-outline-secondary btn-nav">
+          <i class="fa fa-align-justify py-3"></i>
+        </a>
         <ul>
           <li>Marketing Services</li>
           <li>Custom Theme Design</li>
@@ -68,7 +74,7 @@
     </div>
 
     <div class="bg-primary">
-      <div class="services container">
+      <div class="services container" id="services">
         <div class="card mb-5" style="width: 100%">
           <img
             src="images/image-card-1.jpg"
