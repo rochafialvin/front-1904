@@ -42,11 +42,17 @@ html {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
 .nav-container h1 {
   font-weight: 900;
+}
+
+.nav-container a {
+  color: black;
+  font-size: 23px;
 }
 
 .btn-nav {
@@ -113,7 +119,19 @@ html {
   padding-block: 50px;
 }
 
+.card {
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
 .card-title {
   margin-block: 1em;
   font-weight: 700;
+}
+
+.card-body a {
+  border-radius: 10px;
 }
