@@ -11,15 +11,54 @@
   <body>
     <h1 class="text-center my-3">G R I D</h1>
 
+    <div class="container mb-5 d-flex flex-column">
+      <div class="row py-3">
+        <!-- Di semua kondisi layar -->
+        <!-- Akan memiliki lebar yang sama karena tidak disebutkan angkanya -->
+        <div class="col border border-2 border-primary">a</div>
+        <div class="col border border-2 border-primary">b</div>
+        <div class="col border border-2 border-primary">c</div>
+      </div>
+
+      <div class="row py-3">
+        <!-- Di semua kondisi layar -->
+        <!-- d dan f akan memiliki masing - masing 3 bagian, untuk e akan memiliki semua space yang tersisa (6 bagian) -->
+        <div class="col-3 border border-2 border-secondary">d</div>
+        <div class="col border border-2 border-secondary">e</div>
+        <div class="col-3 border border-2 border-secondary">f</div>
+      </div>
+
+      <div class="row py-3">
+        <!-- Saat lebar layar small : 3 bagian, medium : 4 bagian, large dan seterusnya : 2 bagian -->
+        <div
+          class="col-sm-3 col-md-4 col-ld-2 border border-2 border-secondary"
+        >
+          d
+        </div>
+        <div class="col border border-2 border-secondary">e</div>
+        <div class="col-sm-3 col-md-5 border border-2 border-secondary">f</div>
+      </div>
+
+      <!-- Space yang tersedia akan ditaruh di antara setiap elemen -->
+      <div class="row py-3 justify-content-between">
+        <!-- Saat lebar layar small : 3 bagian, medium : 4 bagian, large dan seterusnya : 2 bagian -->
+        <div class="col-3 border border-2 border-secondary">d</div>
+        <div class="col-3 border border-2 border-secondary">e</div>
+        <div class="col-3 border border-2 border-secondary">f</div>
+      </div>
+    </div>
+
     <div class="container">
       <!-- 12 bagian -->
       <div class="row">
         <div class="item item-1 col-12 order-sm-1 order-md-0">
-          <h1>Heading Satu</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            suscipit.
-          </p>
+          <div class="d-flex justify-content-between">
+            <h1>Heading Satu</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, suscipit.
+            </p>
+          </div>
         </div>
         <div class="item item-2 col-12 col-md col-lg-3 col-xl order-xl-2">
           <h1>Heading Dua</h1>
@@ -57,5 +96,20 @@
         </div>
       </div>
     </div>
+
+    <h1 class="text-center my-3">F L E X B O X</h1>
+
+    <div class="d-flex container-custom">
+      <div class="flexitem">1</div>
+      <div class="flexitem">2</div>
+      <div class="flexitem">3</div>
+      <div class="flexitem">4</div>
+      <div class="flexitem">5</div>
+      <div class="flexitem">6</div>
+      <div class="flexitem">7</div>
+      <div class="flexitem">8</div>
+    </div>
+
+    <div style="height: 1000px"></div>
   </body>
 </html>

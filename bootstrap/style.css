@@ -6,13 +6,20 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+img {
   margin: 0;
+  padding: 0;
 }
 
-.container {
-  border: 0.2px solid black;
+.container,
+.container-custom {
+  border: 2px solid black;
   /* height: 1000px; */
+}
+
+.container-custom {
+  height: 1000px;
 }
 
 .item {
@@ -34,4 +41,14 @@ p {
 }
 .item-5 {
   background-color: slategrey;
+}
+
+.flexitem {
+  border: 2px solid violet;
+  width: 100px;
+  height: 100px;
+}
+
+.d-flex {
+  border: 1px solid red;
 }
