@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  border: 0.2px solid black;
+  height: 1000px;
+}
+
+.item {
+  padding-block: 50px;
+  color: white;
+}
+
+.item-1 {
+  background-color: violet;
+}
+.item-2 {
+  background-color: teal;
+}
+.item-3 {
+  background-color: tomato;
+}
+.item-4 {
+  background-color: turquoise;
+}
+.item-5 {
+  background-color: slategrey;
+}
